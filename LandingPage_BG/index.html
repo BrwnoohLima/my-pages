@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,8 +16,8 @@
 	<div class="desktop" id="header" style="padding: 5px 400px 0px 400px;">
 		<div class="row">	
 			<div class="col">
-				<img src="assets/img/logo-cruzeiro.png" alt="" 
-				style="width: 100px; background-image: url('assets/img/header.png'); padding: 0px 20px 0px 20px;" />
+				<img src="./assets/img/logo-cruzeiro.png" alt="" 
+				style="width: 100px; background-image: url('./assets/img/header.png'); padding: 0px 20px 0px 20px;" />
 			</div>
 		</div>
 		<div class="row" style="margin: -70px -400px 0px -400px;">
@@ -27,22 +28,21 @@
 			</svg>	
 		</div>
 		<div class="row"  style="margin: -15px 0px 0px 60px;">
-			<div class="col">	
-				<div class="row">
-					<div><p style="font-size: 10px; color: #fff;">Entidade <br/> Beneficiada <br/></p></div>
+			<div class="col" style="margin: 0px 60px 0px -60px;">
+				<div class="row justify-content-center">
+					<span style="font-size: 10px; color: #fff;">Instituição Beneficiada<br/></span>
 				</div>
-				<div class="row" style="margin-top: -15px;"><img src="assets/img/logo-abrinq.png" alt="" style="width: 60px;"></div>
+				<div class="row justify-content-center">
+					<img src="assets/img/header-abrinq.png" alt="" style="width: 80px;">
+				</div>
 			</div>
 			<div class="col" style="margin-right: 150px;">
 				<img src="assets/img/hand.png" alt="" style="margin: 0px 0px 15px -25px; width: 220px;">
 			</div>
 			<div class="col">
 				<div class="row">
-					<p style="font-size: 10px; color: #fff;">Título <br/> Emitido Por <br/></p>
-				</div>
-				<div class="row mx-auto">
-					<div style="width: 40px; height: 40px; background-color: #fff; 
-					margin: -2px 0px 20px -6px;"></div>
+					<img style="width: 150px; margin-top: 30px; filter:  drop-shadow(1px 2px 1px rgba(0,0,0,0.5));" 	
+					src="assets/img/header-aplub.png" alt="" >
 				</div>
 			</div>
 		</div>
@@ -82,7 +82,9 @@
 			<img src="assets/img/faixa-braca.png" alt="" id="shadow" class="desktop">
 		</div>
 		<div class="col-md-12">
-			<img src="assets/img/moto.png" alt="" class="desktop">
+			<a href="https://loja.torcidadasorte.com.br/">
+				<img src="assets/img/premio.png" alt="" class="desktop">
+			</a>
 		</div>
 		<div class="mobile">
 			<div class="badge badge-pill" style="background-color: #fff; color: #000;
@@ -93,7 +95,9 @@
 			</div>
 		</div>
 		<div class="col-md-12">
-			<img src="assets/img/moto.png" alt="" class="mobile" style="width: 300px; margin-top: 15px;">
+			<a href="https://loja.torcidadasorte.com.br/">
+				<img src="assets/img/premio.png" alt="" class="mobile" style="width: 300px; margin-top: 15px;">
+			</a>
 		</div>
 	</div>	<!-- FIM SUB-HEADER -->
 	<!-- SEÇÃO -->
@@ -157,16 +161,16 @@
 		<span id="number2">PROGRAMAS E PROJETOS DESENVOLVIDOS</span>
 	</div>
 	<div class="justify-content-center" style="color: #fff; margin: 0px; 
-	padding: 55px 0px 75px 0px;">
+	padding: 55px 0px 75px 25px;">
 		<span style="font-size: 20px; font-weight: 800; color: #0063AE">
 			BAIXE O APP GRÁTIS
 		</span><br/>
-		<span class="badge badge-pill"  style="font-size: 16px; margin: 30px 5vw 0px 0px;
-        background-color: #fff; padding: 12px 12vh 13px 12vh; filter: drop-shadow(-1px 6px 2px rgba(80,80,80,0.5));">
-			<img src="assets/img/logo-google-play.png" alt="" style="width: 130px; margin-top: -10px;">
+		<span class="badge badge-pill"  style="font-size: 16px; margin: 30px 4.5vw 0px 0px;
+        background-color: #fff; padding: 5px 55px 5px 55px;" id="shadow">
+			<img src="assets/img/logo-google-play.png" alt="" style="width: 140px; ">
 		</span>
 		<span class="badge badge-pill" style="font-size: 16px; margin: 30px 0px 0px -15px;
-        color: #fff; background-color: #0063AE; padding: 15px 25px 15px 25px;" id="shadow">
+        color: #fff; background-color: #0063AE; padding: 12px 25px 12px 25px;" id="shadow">
 			QUERO CONCORRER AGORA!
 		</span>
 	</div>	<!-- FIM SEÇÃO -->
@@ -183,12 +187,35 @@
 	<div class="justify-content-center" style="margin-top: 30px;">
 		<img src="assets/img/site-seguro.png" alt="" style="width: 180px;">
 	</div>
-	<div class="justify-content-center" style="margin: 0px 200px 30px 200px; padding: 150px 0px 150px 0px;
-	background-image: url('assets/img/text.png'); background-repeat: no-repeat; background-position-y: center;
-	background-position-x: center; background-size: contain;" id="desktop"></div>	
-	<div class="mobile" style="margin: -300px 20px 100px 0px; overflow-y: scroll;">
-		<img src="assets/img/text.png" alt="" style="width: 950px;">
-		<p>deslize para o lado para ver tudo -></p>
+	<div class="justify-content-center" style="margin: 0px 220px 30px 220px; padding: 15px 0px 15px 0px;">
+	 <span style="color: #333; text-align: start !important;" class="desktop">
+		Títulos de Capitalização da Modalidade Filantropia Premiável, aprovados pela Susep e emitidos pela APLUB Capitalização S/A, inscrita no CNPJ sob o nº 88.076.302-0001-94. Antes de contratar, consulte previamente as Condições Gerais.
+		A contratação deste título é apropriada principalmente na hipótese do consumidor estar interessado em contribuir com a Fundação ABRINQ e participar dos sorteios. A aprovação deste plano pela Susep não implica, por parte da Autarquia, em incentivo ou recomendação a sua aquisição, representando, exclusivamente, sua adequação às normas em vigor. O valor de resgate deste Título poderá ser, caso haja expressa solicitação do subscritor em documento específico que trata da cessão, revertido para a entidade beneficente de assistência social indicada na ficha de cadastro. É proibida a venda para menores de dezesseis anos.
+		Atendimento APLUB Capitalização 0800 701 5179 Horário de Atendimento de Segunda a Sexta das 08:30 às 17:30
+		Na qualidade de Subscritor deste Título de Capitalização da Modalidade Filantropia Premiável, emitido pela APLUB CAPITALIZAÇÃO S.A. e aprovado conforme
+		PROCESSO SUSEP Nº: XXXXXXXXXXXXXX declaro que:
+		I. Li e entendi as Condições Gerais deste Título de Capitalização onde concordo com os seus termos e autorizo, sem ônus, a utilização de meu nome, voz e imagem para divulgação desta campanha;
+		II. Tenho conhecimento de que a contratação da presente Proposta de Subscrição implica na automática adesão a todos os termos das Condições Gerais do Título de Capitalização e que este documento encontra-se ao meu dispor no site www.torcidadasorte.com.br;.
+		III. Cedo a Fundação ABRINQ, o direito de resgate decorrente deste Título de Capitalização.
+	 </span>
+	</div>	
+	<div class="mobile" style="margin: 30px 30px 50px 30px;">
+		<div style="width:300px;height:310px;overflow:scroll; border: 1px solid #ccc; padding: 30px;">
+			Títulos de Capitalização da Modalidade Filantropia Premiável, aprovados pela Susep e emitidos pela APLUB Capitalização S/A, inscrita no CNPJ sob o nº 88.076.302-0001-94. Antes de contratar, consulte previamente as Condições Gerais.
+			A contratação deste título é apropriada principalmente na hipótese do consumidor estar interessado em contribuir com a Fundação ABRINQ e participar dos sorteios. A aprovação deste plano pela Susep não implica, por parte da Autarquia, em incentivo ou recomendação a sua aquisição, representando, exclusivamente, sua adequação às normas em vigor. O valor de resgate deste Título poderá ser, caso haja expressa solicitação do subscritor em documento específico que trata da cessão, revertido para a entidade beneficente de assistência social indicada na ficha de cadastro. É proibida a venda para menores de dezesseis anos.
+			Atendimento APLUB Capitalização 0800 701 5179 Horário de Atendimento de Segunda a Sexta das 08:30 às 17:30
+			Na qualidade de Subscritor deste Título de Capitalização da Modalidade Filantropia Premiável, emitido pela APLUB CAPITALIZAÇÃO S.A. e aprovado conforme
+			PROCESSO SUSEP Nº: XXXXXXXXXXXXXX declaro que:
+			I. Li e entendi as Condições Gerais deste Título de Capitalização onde concordo com os seus termos e autorizo, sem ônus, a utilização de meu nome, voz e imagem para divulgação desta campanha;
+			II. Tenho conhecimento de que a contratação da presente Proposta de Subscrição implica na automática adesão a todos os termos das Condições Gerais do Título de Capitalização e que este documento encontra-se ao meu dispor no site www.torcidadasorte.com.br;.
+			III. Cedo a Fundação ABRINQ, o direito de resgate decorrente deste Título de Capitalização.
+		</div>
+		<p style="padding: 20px 0px 50px 0px; color: #333;">deslize para baixo para ver tudo</p>
 	</div>
 </body>
 </html>
+
+<!-- 
+	background-image: url('assets/img/text.png'); background-repeat: no-repeat; background-position-y: center;
+	background-position-x: center; background-size: contain;"
+ -->
