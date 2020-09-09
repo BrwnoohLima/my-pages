@@ -1,55 +1,190 @@
-* { padding: 0%; margin: 0%; text-align: center; }
-@media (max-width: 600px) { 
-    .desktop { display: none; } #text { font-size: 15px; }
-    #antepenult { font-size: 18px; color: #fff; margin: 10px;
-    background: transparent; border: solid 3px #fff;
-    width: 250px; padding-top: 10px; padding-bottom: 10px; }
-    #number { font-size: 40px; font-weight: 800; font-family: 'Poppins', sans-serif; }
-    #number2 { font-size: 15px; font-weight: 800; }
-    #section1-1 {  width: 100px; margin-top: -25px; }
-    #section1-2 { width: 150px; margin-left: -25px; }
-    #section1-3 { width: 100px; margin: -25px 0px 0px -35px; }
-    #section1-4 {
-        font-size: 24px; margin: 35px 0px 0px -25px; color: #fff;
-        background-color: #0063AE; padding: 10px 25px 10px 25px; 
-    }
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+* {
+	font-family: "Open Sans", sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-@media (min-width: 600px) { 
-    .mobile { display: none; } #text { font-size: 24px; }
-    #antepenult { font-size: 24px; color: #fff; margin: 10px;
-    background: transparent; border: solid 3px #fff;
-    width: 300px; padding-top: 10px; padding-bottom: 10px; }
-    #number { font-size: 60px; font-weight: 800; font-family: 'Poppins', sans-serif; }
-    #number2 { font-size: 20px; font-weight: 800; }
-    #section1-1 { width: 300px; margin-top: -25px; }
-    #section1-2 { width: 400px; margin-left: -25px; }
-    #section1-3 { width: 300px; margin: -25px 0px 0px -35px; }
-    #section1-4 {
-        font-size: 24px; margin: 35px 0px 0px 0px; color: #fff;
-        background-color: #0063AE; padding: 10px 65px 10px 65px; 
-    }
+
+a + button {
+	height: 40px;
 }
-.row { padding-top: 5px; }
-#header {
-    /* background-image: linear-gradient( to top, #ECB71D 5%, #1173C4 5%); */
-    background-image: url('img/header.png');
-    background-position-y: bottom;
-    min-width: 100%;
+
+@media only screen and (max-width: 700px) {
+	.links {
+		flex-direction: column;
+	}
 }
-#sub-header {
-    margin: 0%;
-    background-image: url('img/sub-header.png');
-    padding-bottom: 30px;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-position: center top;
-    background-size: cover;
+
+.links {
+	width: 80vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
-#shadow {
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
-    filter:  drop-shadow(-1px 6px 2px rgba(0,0,0,0.5));
+
+.payments {
+	width: 80vw;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-evenly;
 }
-/* Remover espaço em brando lateral no mobile */
-html, body{
-    overflow-x: hidden; 
+
+#header-background {
+	top: 0;
+	/* z-index: 1;   */
+	width: 100%;
+	max-height: 200px;
+}
+
+.btn {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.btn-default {
+	font-size: 13px;
+	color: rgba(108, 88, 179, 0.75);
+	letter-spacing: 1px;
+	line-height: 15px;
+	border: 2px solid rgba(108, 89, 179, 0.75);
+	border-radius: 40px;
+	background: transparent;
+	transition: all 0.3s ease 0s;
+}
+
+.btn-default:hover {
+	color: #fff;
+	background: rgba(108, 88, 179, 0.75);
+	border: 1px solid;
+}
+
+.responsiveBorder {
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center !important;
+	align-items: center;
+}
+
+.android {
+	margin-top: 6px;
+	width: 100%;
+	display: flex;
+	color: white;
+	justify-content: center;
+}
+.android img {
+	max-width: 60px;
+}
+.android .download-app {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	color: #026062;
+	font-size: 0.8rem;
+}
+.android .android-icon {
+	display: flex;
+	align-items: center;
+}
+.premio {
+	min-height: 160px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+.premio #background {
+	position: absolute;
+	height: 100%;
+	z-index: 1;
+	/* min-height: 200px; */
+}
+.premio > img:first-of-type {
+	align-self: flex-end;
+}
+.premio .premio-descricao {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	z-index: 2000;
+	color: #2b2b2b;
+	height: 100%;
+	margin-left: 1.5rem;
+	margin-right: 15px;
+}
+.premio .premio-descricao a {
+	text-decoration: none;
+	color: whitesmoke;
+	margin-top: 5px;
+	text-shadow: 1px 1px 2px rgba(44, 43, 43, 0.575);
+}
+.premio-descricao span {
+	font-size: 1.4em;
+}
+.premio-descricao strong + span {
+	font-weight: 600;
+	font-size: 1.1em;
+}
+.premio-descricao strong {
+	font-size: 2.6vh;
+	padding: 0 10px;
+	background-color: #2b2b2b;
+	color: white;
+}
+#landing-bkg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+	.responsiveBorder {
+		margin-left: 15%;
+		margin-right: 15%;
+		text-align: center !important;
+		align-items: center;
+	}
+}
+#quero-concorrer {
+	border: none;
+	transition: border 1s;
+	height: 60px;
+}
+#quero-concorrer:hover {
+	border: 1px solid whitesmoke;
+}
+
+@media only screen and (min-width: 768px) {
+	.responsiveBorder {
+		margin-left: 20%;
+		margin-right: 20%;
+		text-align: center !important;
+		align-items: center;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	.responsiveBorder {
+		margin-left: 35%;
+		margin-right: 35%;
+		text-align: center !important;
+		align-items: center;
+	}
+}
+@media only screen and (min-width: 650px) {
+	#background {
+		max-width: 70vh;
+	}
+	#quero-concorrer {
+		padding: 15px 100px;
+	}
+}
+@media only screen and (max-width: 650px) {
+	#background {
+		max-width: 90%;
+	}
+	#quero-concorrer {
+		padding: 10px 40px;
+	}
 }
